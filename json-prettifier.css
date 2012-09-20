@@ -1,0 +1,57 @@
+
+.json-prettifier {
+    font-family: monospace, sans-serif;
+    font-size: 14px;
+    white-space: pre;
+}
+
+.json-prettifier span.key {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.json-prettifier span.key:after {
+    content: ":"
+}
+
+.json-prettifier span.key:hover {
+    opacity: 0.6;
+}
+
+.json-prettifier div.key-value-pair i {
+    background-color: #999;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.json-prettifier span.string {
+    color: green;
+    font-weight: bold;
+}
+
+.json-prettifier span.number {
+    color: #8a2be2;
+    font-weight: bold;
+}
+
+.json-prettifier span.boolean {
+    color:#9d1246;
+    font-weight: bold;;
+}
+
+.json-prettifier span.array-key {
+    color: #8a2be2;
+    font-weight: bold;
+
+}
+.json-prettifier span.object-key {
+    color: #D14;
+}
+
+.json-prettifier span.curly {
+    font-weight: bold;;
+}
+.json-prettifier span.bracket {
+    font-weight: bold;
+    color: #2f4f4f;
+}

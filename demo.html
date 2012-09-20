@@ -1,0 +1,28 @@
+<html>
+
+<head>
+   <link rel="stylesheet" type="text/css" href="json-prettifier.css">
+   <meta charset="UTF-8" />
+</head>
+
+<body>
+
+   <div id="code">
+   </div>
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+   <script src="json-prettifier.js"></script>
+
+   <script>
+   $(function () {
+
+    var json = '{"id":1,"jsonrpc":"2.0","url":"http://www.somesite.com","result":[{"id":1,"avatar":"images/user_1.png","age":2,"admin":true,"name":"Геннадий Волков","company":"Titanigraf","phone":"+70955191626","email":"gennadiy@titanigraf.com","registerDate":"Sun, 23 Feb 1975 13:42:07 GMT","friends":[{"id":1,"name":"Аркадий Кравченко","phone":"+70955684941"},{"id":2,"name":"Гавриил Мельник","phone":"+70951489353"},{"id":3,"name":"Лазарь Михайлов","phone":"+70951685398"}],"field":"field value"},{"id":2,"avatar":"images/user_2.png","age":60,"admin":true,"name":"Марк Егоров","company":"iOptystix","phone":"+70956762766","email":"mark@ioptystix.com","registerDate":"Wed, 29 Jun 2005 05:15:56 GMT","friends":[{"id":1,"name":"Вячеслав Захаров","phone":"+70955375488"},{"id":2,"name":"Лазарь Михайлов","phone":"+70954598747"},{"id":3,"name":"Константин Павлов","phone":"+70954108332"}],"field":"field value"},{"id":3,"avatar":"images/user_3.png","age":12,"admin":false,"name":"Станислав Тарасов","company":"Anaframe","phone":"+70952365321","email":"stanislav@anaframe.com","registerDate":"Mon, 10 Aug 1987 04:46:57 GMT","friends":[{"id":1,"name":"Анатолий Бондаренко","phone":"+70959327050"},{"id":2,"name":"Леонард Никитин","phone":"+70958084735"},{"id":3,"name":"Виктор Рубан","phone":"+70955837285"}],"field":"field value"},{"id":4,"avatar":"images/user_4.png","age":18,"admin":true,"name":"Антон Коваленко","company":"Venconix","phone":"+70951699886","email":"anton@venconix.com","registerDate":"Tue, 02 Sep 2008 18:21:35 GMT","friends":[{"id":1,"name":"Анатолий Бондаренко","phone":"+70954640584"},{"id":2,"name":"Карл Рябов","phone":"+70955991278"},{"id":3,"name":"Людвиг Сергеев","phone":"+70958504371"}],"field":"field value"},{"id":5,"avatar":"images/user_5.png","age":8,"admin":false,"name":"Денис Данилов","company":"Keytheon","phone":"+70953334954","email":"denis@keytheon.com","registerDate":"Fri, 16 Aug 1996 08:39:10 GMT","friends":[{"id":1,"name":"Анатолий Бондаренко","phone":"+70951207852"},{"id":2,"name":"Георгий Василенко","phone":"+70958327402"},{"id":3,"name":"Вячеслав Захаров","phone":"+70959123956"}],"field":"field value"},{"id":6,"avatar":"images/user_6.png","age":23,"admin":true,"name":"Вячеслав Захаров","company":"SysUSA","phone":"+70956179245","email":"vyacheslav@sysusa.com","registerDate":"Thu, 18 Nov 1976 23:41:09 GMT","friends":[{"id":1,"name":"Федор Никитин","phone":"+70953207264"},{"id":2,"name":"Лев Сергеев","phone":"+70954812930"},{"id":3,"name":"Дмитрий Фролов","phone":"+70956068085"}],"field":"field value"},{"id":7,"avatar":"images/user_7.png","age":22,"admin":false,"name":"Леонид Приходько","company":"InfoAirway","phone":"+70959084143","email":"leonid@infoairway.com","registerDate":"Wed, 20 Oct 1999 11:31:04 GMT","friends":[{"id":1,"name":"Тарас Алексеев","phone":"+70954340072"},{"id":2,"name":"Артем Смирнов","phone":"+70953184991"},{"id":3,"name":"Тарас Алексеев","phone":"+70952923298"}],"field":"field value"},{"id":8,"avatar":"images/user_8.png","age":-9,"admin":false,"name":"Александр Иванов","company":"Teknoplexon","phone":"+70956506529","email":"aleksandr@teknoplexon.com","registerDate":"Thu, 12 Oct 2000 22:17:24 GMT","friends":[{"id":1,"name":"Оскар Данилов","phone":"+70951459719"},{"id":2,"name":"Гордей Соколов","phone":"+70954550835"},{"id":3,"name":"Геннадий Волков","phone":"+70952302477"}],"field":"field value"}]}';
+
+      $("#code").jsonPrettifier('render', json);
+
+  })
+</script>
+
+</body>
+
+</html>

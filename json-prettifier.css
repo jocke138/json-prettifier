@@ -24,6 +24,10 @@
     display: inline-block;
 }
 
+.json-prettifier span.value a {
+    color: #1B9EE0;
+}
+
 .json-prettifier span.string {
     color: green;
     font-weight: bold;
